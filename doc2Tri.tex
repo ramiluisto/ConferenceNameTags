@@ -1,0 +1,81 @@
+%  
+% 
+% 
+% 
+% 
+
+\documentclass{letter}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\textwidth=20cm
+\oddsidemargin=0.0cm
+\evensidemargin=0.0cm
+\usepackage{graphicx}
+\usepackage{transparent}
+\usepackage{color}
+\usepackage[freepin,crossmark]{ticket}
+
+
+%\unitlength=1cm
+
+% This specifies the row- and column amounts
+% of nametags (apparently)
+\ticketNumbers{3}{8}
+
+% This specifies the size of a single
+% tag. For 3 x 8 configuration 
+% the setting \ticketSize{72}{34.9}
+% is okay.
+\ticketSize{72}{34.9}
+
+% These make the tags begin at the very boundary of the paper.
+\hoffset=-25.4mm
+\voffset=-28.9mm
+
+% I don't know what this does. Don't touch maybe?
+\ticketDistance{0}{0}
+
+% The following somehow reparametrizes this ticket-thingy.
+% Modify this for the picures and lines in the nametag.
+\renewcommand{\ticketdefault}{%
+%  \put(0,0){\transparent{0.2}\includegraphics[width=72mm]{BackGround.png}}
+  \put(0,2){\transparent{0.6}\includegraphics[width=2cm]{nevanlinna2.png}}
+  \put(52,2){\transparent{0.6}\includegraphics[width=2cm]{nevanlinna2.png}}
+  \put(12.5,22.5){\line(1,0){17}}
+  \put(12.5,0.5){\line(0,1){16}}
+  \put(16,31){{\scriptsize \bfseries Kumpula Campus Christmas Party}}
+  \put(16,28){{\scriptsize \bfseries November 22nd 2013}}
+}
+
+
+% Here we add the names to the nametag, and this
+% creates the actual nametag.
+\newcommand{\confpin}[3]{\ticket{%
+  \put(18,23){\begin{minipage}[t]{65mm}
+      \vspace{3.5mm}
+  
+      \hspace{1mm} \bfseries  \Large #1
+      
+      \hspace{1mm} \bfseries  \large #2
+
+      \hspace{1mm} \bfseries  \large #3
+
+
+\end{minipage}}}%
+}
+\begin{document}
+
+
+\sffamily
+
+% The parsed list of names should be contained in
+% a file called tags.tex in the same folder as this file.
+\include{tags}
+
+
+
+
+
+\end{document}
+\end
+
