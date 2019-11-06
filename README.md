@@ -1,7 +1,7 @@
 # ConferenceNameTags
 A combination of Python and LaTeX to generate conference name tags smartly
 
-The idea is, that when you have a conference with 50+ participants but you are doing the nametags by yourself (i.e. your gradstudents) 
+The idea is, that when you have a conference with 50+ participants but you are doing the nametags by yourself (i.e. your gradstudents are) 
 it would be nice if the nametags were printed in such a way that you can:
 1) Take the printed stack of papers.
 2) Cut the stack with a big cutter.
