@@ -15,8 +15,11 @@ This combination of Python and Latex does just that if you do as follows
 4) Compile doc2.tex -file (or doc2Tri.tex) and get your nametags.
 
 Notes:
+
 -The outlook of your nametags can be controlled by editing the doc2.tex -file. 
+
 -The ConverterTri.py and doc2Tri.tex -files are slightly modified versions of the standard ones, it would make sense
 to have just one file with a parameter. (He said already in 2014 and never did it.)
+
 -Python files by Rami Luisto, .tex -files originally by Jan Cristina but altered and commented by Rami Luisto.
 
